@@ -1,0 +1,21 @@
+--- glassfish/entity-persistence/src/java/oracle/toplink/essentials/internal/ejb/cmp3/jdbc/base/DataSourceImpl.java	2007-01-09 02:14:12.000000000 +0100
++++ glassfish/entity-persistence/src/java/oracle/toplink/essentials/internal/ejb/cmp3/jdbc/base/DataSourceImpl.java-gil	2012-02-02 11:42:08.045005179 +0100
+@@ -26,6 +26,8 @@
+ import java.sql.SQLException;
+ import java.sql.DriverManager;
+ import javax.sql.DataSource;
++import java.sql.SQLFeatureNotSupportedException;
++import java.util.logging.Logger;
+ import oracle.toplink.essentials.internal.ejb.cmp3.transaction.base.TransactionManagerImpl;
+ 
+ /**
+@@ -162,4 +164,9 @@
+     public boolean isWrapperFor(Class<?> iface) throws SQLException {
+         return false;
+     }
++
++    public Logger getParentLogger() throws SQLFeatureNotSupportedException {
++        throw new SQLFeatureNotSupportedException("Not implemented method getParentLogger()");
++    }
++
+ }

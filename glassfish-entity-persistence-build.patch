@@ -1,0 +1,17 @@
+--- glassfish/entity-persistence/build.xml.sav	2008-02-26 18:01:43.000000000 +0100
++++ glassfish/entity-persistence/build.xml	2008-02-26 18:06:35.000000000 +0100
+@@ -182,8 +182,12 @@
+   
+     <!-- javadocs -->
+     <target name="docs" depends="init">
+-        <mkdir dir="${release.javadocs.dir}"/>
+-<!-- TODO - create javadoc target -->
++        <mkdir dir="${build.dir}/javadoc"/>
++         <javadoc sourcepath="${src.dir}"
++                  packagenames="persistence.antlr,oracle.toplink"
++                  destdir="${build.dir}/javadoc"
++                  classpath="${javaee.jar}"/>
++
+     </target>
+ 
+     <!-- Run ANTLR. -->
