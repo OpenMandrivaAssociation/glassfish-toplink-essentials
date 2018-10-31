@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:          glassfish-toplink-essentials
 Version:       2.0.46
-Release:       8.2
+Release:       8.3
 Summary:       Glassfish JPA Toplink Essentials
 Group:	       Development/Java
 License:       CDDL or GPLv2 with exceptions
