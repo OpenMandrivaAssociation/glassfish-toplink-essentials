@@ -5,7 +5,7 @@ Release:       8.3
 Summary:       Glassfish JPA Toplink Essentials
 Group:	       Development/Java
 License:       CDDL or GPLv2 with exceptions
-URL:           http://glassfish.java.net/javaee5/persistence/
+URL:           https://glassfish.java.net/javaee5/persistence/
 Source0:       http://dlc.sun.com.edgesuite.net/javaee5/promoted/source/glassfish-persistence-v2-b46-src.zip
 # wget http://download.java.net/javaee5/v2.1.1_branch/promoted/source/glassfish-v2.1.1-b31g-src.zip
 # unzip glassfish-v2.1.1-b31g-src.zip
